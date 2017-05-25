@@ -56,11 +56,11 @@ public class _23 {
 		 */
 
 		/* e. */// String numero3 = "A";
-		//int texto3 = 1;
+		// int texto3 = 1;
 		int numero3 = 1;
 		System.out.println(numero3);
-		//numero3 = numero3 + numero3;
-		//texto3 = texto3;
+		// numero3 = numero3 + numero3;
+		// texto3 = texto3;
 		numero3 = 2;
 		System.out.println(numero3);
 
@@ -68,21 +68,18 @@ public class _23 {
 		 * Console: 1 2
 		 */
 
-		
-		/*f.*/	boolean numero4 = true;
+		/* f. */ boolean numero4 = true;
 		String booleano4 = "false";
-		//numero4 = false | true;
-	//booleano4 = "false | false";
-	//numero4 = false | numero4;
-	System.out.println(booleano4);
-	System.out.println(numero4);
+		// numero4 = false | true;
+		// booleano4 = "false | false";
+		// numero4 = false | numero4;
+		System.out.println(booleano4);
+		System.out.println(numero4);
 
-	/*Console:
-	false
-	true*/
+		/*
+		 * Console: false true
+		 */
 
-		
-		
 	}
 }
 /*
