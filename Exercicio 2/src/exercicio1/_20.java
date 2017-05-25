@@ -16,7 +16,7 @@ public class _20 {
 		
 		while (start <= end) {
 			System.out.println(start);
-
+			
 			start++;
 
 			Scanner.close();

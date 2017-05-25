@@ -23,4 +23,4 @@ public class _22 {
 		}
 		scanner.close();
 	}
-}
+}	

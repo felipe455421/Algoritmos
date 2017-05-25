@@ -11,9 +11,10 @@ public class _21 {
 		for(int linha = 0; linha < qtdLinhas; linha++){
 			for(int coluna = 0; coluna <= linha; coluna++){
 				System.out.print("1");
-			}
+			}	
 			System.out.println("");
 		}
 		scanner.close();
 	}
 }
+	

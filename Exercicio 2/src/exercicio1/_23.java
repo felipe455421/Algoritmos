@@ -20,7 +20,7 @@ public class _23 {
 				}else{
 					System.out.print ("0" + num1);
 				}
-			
+				
 			}
 			num1--;
 			System.out.println("");
