@@ -19,17 +19,17 @@ public class _28 {
 
 			if (texto.toUpperCase().contains("PEREIRA")){
 			
-				System.out.println(String.format("%s é da %s pereira",t1 ,t2, n1));
+				System.out.println(String.format("%s é da %s %s",t1 ,t2, n1));
 			
 	
 			}else if (texto.toUpperCase().contains("SILVA")){
 				
-				System.out.println(String.format("%s é da %s Silva",t1 ,t2, n2));
+				System.out.println(String.format("%s é da %s %s",t1 ,t2, n2));
 			
 			
 			}else if (texto.toUpperCase().contains("SOUZA")){
 				
-				System.out.println(String.format("%s é da %s Souza",t1 ,t2, n3));
+				System.out.println(String.format("%s é da %s %s",t1 ,t2, n3));
 				
 				
 			}else{

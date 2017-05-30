@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	
 	texto = JOptionPane.showInputDialog("Digite um texto");
 	
-	texto = texto.replaceAll("[aeiouAEIOU]", "W");
+	texto = texto.replace("[aeiouAEIOU]", "W");
 	
 	System.out.println(texto);
 	
@@ -19,4 +19,6 @@ public static void main(String[] args) {
 	
 	
 }
-/*Peça para o usuário digitar um texto e altere todas as vogais do texto, para a letra w, utilizando o replace. (texto = texto.replace("antigoCaracter", "novoCaracter");)*/
+/*Peça para o usuário digitar um texto e altere todas as vogais do texto, para a letra w,
+ *  utilizando o replace. (texto = texto.replace("antigoCaracter", "novoCaracter");)*/
+ 
