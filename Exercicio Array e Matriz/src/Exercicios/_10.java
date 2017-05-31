@@ -14,12 +14,13 @@ public static void main(String[] args) {
 	
 	 for (int i = 0; i < num.length; i++) {
 
-		if (i == 5){
+		if (i != num.length - 1){
 			
-			
+			 System.out.println(num[i]);
+			 
 		}else{
 		 
-		 System.out.println(num[i]);
+		
 }
 	 }
 }

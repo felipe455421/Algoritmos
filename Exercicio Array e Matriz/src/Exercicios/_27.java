@@ -13,6 +13,7 @@ public static void main(String[] args) {
 	num[2][0] = 1;
 	num[2][1] = 1;
 	num[2][2] = 2;
+	
 	int impar1 = 0;
 	int par1 = 0;
 	int impar2 = 0;
@@ -27,11 +28,8 @@ public static void main(String[] args) {
 
 				impar1 = impar1 + num[i][z];
 				
-			}else{
-				
-				par1 = par1 + num[i][z];
 
-			}if (i == 0 && z == 1	 && num[i][z] % 2 == 1) {
+			} else if (i == 0 && z == 1	 && num[i][z] % 2 == 1) {
 
 				impar1 = impar1 + num[i][z];
 
@@ -41,7 +39,7 @@ public static void main(String[] args) {
 
 			}
 			
-		/*	if (i == 0 && z == 0  && num[i][z] % 2 == 0) {
+			if (i == 0 && z == 0  && num[i][z] % 2 == 0) {
 
 				par1 = par1 + num[i][z];
 
@@ -53,7 +51,7 @@ public static void main(String[] args) {
 
 				par1 = par1 + num[i][z];
 
-			}*/
+			}
 			
 			
 			
@@ -68,6 +66,20 @@ public static void main(String[] args) {
 			} else if (i == 1 && z == 2 && num[i][z] % 2 == 1) {
 
 				impar2 = impar2 + num[i][z];
+
+			}
+			
+			if (i == 1 && z == 0  && num[i][z] % 2 == 0) {
+
+				par2 = par2 + num[i][z];
+
+			} else if (i == 1 && z == 1	 && num[i][z] % 2 == 0) {
+
+				par2 = par2 + num[i][z];
+
+			} else if (i == 1 && z == 2	 && num[i][z] % 2 == 0) {
+
+				par2 = par2 + num[i][z];
 
 			}
 			
@@ -87,6 +99,21 @@ public static void main(String[] args) {
 				impar3 = impar3 + num[i][z];
 
 			}
+		
+		
+		if (i == 2 && z == 0  && num[i][z] % 2 == 0) {
+
+			par3 = par3 + num[i][z];
+
+		} else if (i == 2 && z == 1	 && num[i][z] % 2 == 0) {
+
+			par3 = par3 + num[i][z];
+
+		} else if (i == 2 && z == 2	 && num[i][z] % 2 == 0) {
+
+			par3 = par3 + num[i][z];
+
+		}
 
 		}
 	}
@@ -94,8 +121,8 @@ public static void main(String[] args) {
 	System.out.println("Soma dos número ímpares da linha 0: " + impar1);
 	System.out.println("Soma dos números pares da linha 0: " + par1);
 	System.out.println("Soma dos número ímpares da linha 1: " + impar2);
-	System.out.println("Soma dos números pares da linha 0: " + par2);
-	System.out.println("Soma dos números pares da linha 0: " + impar3);
+	System.out.println("Soma dos números pares da linha 1: " + par2);
+	System.out.println("Soma dos números pares da linha 2: " + impar3);
 	System.out.println("Soma dos número ímpares da linha 2: " + par3);
 }
 }
