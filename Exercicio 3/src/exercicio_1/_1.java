@@ -39,7 +39,7 @@ public static void main(String[] args) {
 	System.out.println("Pizza de Coco é o item (15) e custa: " + menuP[14]);
 	
 
-	String pedidoNumero = JOptionPane.showInputDialog("Digite a seguiro numero da pizza que você deseja: ");
+	String pedidoNumero = JOptionPane.showInputDialog("Digite a seguir o numero da pizza que você deseja: ");
 	String codigo = pedidoNumero;
 	String[] lista = codigo.split(" ");
 	String Resultado = "";
