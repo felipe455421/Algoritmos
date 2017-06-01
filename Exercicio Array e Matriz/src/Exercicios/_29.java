@@ -35,14 +35,14 @@ public class _29 {
 		int usrIngles;
 		String answerIngles;
 		double salarioAjustado = 0;
-					/*0 para Estagiário 		
-		1 para Júnior		
-		2 para Pleno 		
-		3 para Sênior		
-		4 para Sênior plus plus*/
+		/*
+		 * 0 para Estagiário 1 para Júnior 2 para Pleno 3 para Sênior 4 para
+		 * Sênior plus plus
+		 */
 
-		usrCargo = Integer.parseInt(JOptionPane.showInputDialog("Digite qual o cargo do funcionário: " + "\n" + "0 para Estagiário;"  + "\n" + 
-		"1 para Júnior;"  + "\n" + "2 para Pleno;"  + "\n" + "3 para Sênior;"  + "\n" + "4 para Sênior plus plus;"));
+		usrCargo = Integer.parseInt(JOptionPane.showInputDialog(
+				"Digite qual o cargo do funcionário: " + "\n" + "0 para Estagiário;" + "\n" + "1 para Júnior;" + "\n"
+						+ "2 para Pleno;" + "\n" + "3 para Sênior;" + "\n" + "4 para Sênior plus plus;"));
 		usrTempo = Integer.parseInt(JOptionPane.showInputDialog("Digite o tempo de empresa em meses do funcionario: "));
 		usrSalario = Integer.parseInt(JOptionPane.showInputDialog("Digite qual o salário atual do funcionário: "));
 		usrIngles = JOptionPane.showConfirmDialog(null, "O funcionario possui Inglês?:");
@@ -123,7 +123,7 @@ public class _29 {
 
 		}
 
-		System.out.println("Cargo: " + cargo[usrCargo] + "\n" + "Salário: R$" + usrSalario + "\n" + "Tempo:" + usrTempo
+		System.out.println("Cargo: " + cargo[usrCargo] + "\n" + "Salário: R$" + usrSalario + "\n" + "Tempo: " + usrTempo
 				+ " meses" + "\n" + "Inglês: " + answerIngles + "\n" + "----------------------------------" + "\n"
 				+ "Novo salário: R$" + salarioAjustado + "\n" + "Cargo: " + cargo[usrCargo]);
 
