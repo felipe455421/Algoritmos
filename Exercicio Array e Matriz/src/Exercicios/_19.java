@@ -23,7 +23,7 @@ public class _19 {
 
 			if (num1[i] == num2[z]) {
 
-				System.out.println(i + " " + z);
+				System.out.println("Array A posição " + i + ", Array B posição " + z + " possuem o valor: 5 ");
 
 			} else {
 
@@ -36,7 +36,7 @@ public class _19 {
 
 			if (num1[i] == num2[z]) {
 
-				System.out.println(i + " " + z);
+				System.out.println("Array A posição " + i + ", Array B posição " + z + " possuem o valor: 4 ");
 
 			}
 		}
@@ -46,7 +46,7 @@ public class _19 {
 
 			if (num1[i] == num2[z]) {
 
-				System.out.println(i + " " + z);
+				System.out.println("Array A posição " + i + ", Array B posição " + z + " possuem o valor: 3 ");
 			}
 		}
 		z++;
@@ -55,7 +55,7 @@ public class _19 {
 
 			if (num1[i] == num2[z]) {
 
-				System.out.println(i + " " + z);
+				System.out.println("Array A posição " + i + ", Array B posição " + z + " possuem o valor: 2 ");
 
 			}
 		}
@@ -65,7 +65,7 @@ public class _19 {
 
 			if (num1[i] == num2[z]) {
 
-				System.out.println(i + " " + z);
+				System.out.println("Array A posição " + i + ", Array B posição " + z + " possuem o valor: 1 ");
 			}
 		}
 	}

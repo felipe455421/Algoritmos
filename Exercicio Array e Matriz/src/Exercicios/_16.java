@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		if (i == 1 || i == 3 || i == 4 || i == 6){
 				
 		
-	    alf = String.format("%c", 'a' + z);
+	    alf = String.format("%c", 'A' + z);
 	    z++;
 	    
 	    
