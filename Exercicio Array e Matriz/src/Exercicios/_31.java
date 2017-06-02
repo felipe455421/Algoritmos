@@ -2,7 +2,7 @@ package Exercicios;
 
 import javax.swing.JOptionPane;
 
-public class _30 {
+public class _31 {
 public static void main(String[] args) {
 	
 	int answer = 0;
@@ -39,6 +39,8 @@ public static void main(String[] args) {
 	int usrIngles;
 	String answerIngles;
 	double salarioAjustado = 0;
+	double gastoAnual = 0;
+	double gastoAnualAjustado = 0;
 	/*
 	 * 0 para Estagiário 1 para Júnior 2 para Pleno 3 para Sênior 4 para
 	 * Sênior plus plus
@@ -62,9 +64,12 @@ public static void main(String[] args) {
 	}
 
 	if (usrTempo <= 3 && usrIngles == 0) {// 1
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[1];
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
 
 	} else if (usrTempo <= 3 && usrIngles == 1) {
 
@@ -73,63 +78,94 @@ public static void main(String[] args) {
 	}
 
 	if (usrTempo > 3 && usrTempo <= 9 && usrIngles == 0) {// 2
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[2];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	} else if (usrTempo > 3 && usrTempo <= 9 && usrIngles == 1) {
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[2];
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 
 	}
 
 	if (usrTempo > 9 && usrTempo <= 12 && usrIngles == 0) {// 3
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[3];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	} else if (usrTempo > 9 && usrTempo <= 12 && usrIngles == 1) {
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[3];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	}
 
 	if (usrTempo > 12 && usrTempo <= 24 && usrIngles == 0) {// 4
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[4];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	} else if (usrTempo > 12 && usrTempo <= 24 && usrIngles == 1) {
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[4];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	}
 
 	if (usrTempo > 24 && usrTempo <= 36 && usrIngles == 0) {// 5
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[5];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	} else if (usrTempo > 24 && usrTempo <= 36 && usrIngles == 1) {
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[5];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	}
 
 	if (usrTempo > 36 && usrIngles == 0) {// 6
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[0];
 		salarioAjustado = salarioAjustado * tempoEmpresa[6];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	} else if (usrTempo > 36 && usrIngles == 1) {
-
+		
+		gastoAnual = usrSalario * 12;
 		salarioAjustado = usrSalario * tempoEmpresa[6];
-
+		gastoAnualAjustado = salarioAjustado * 12;
+		gastoAnualAjustado = gastoAnualAjustado - gastoAnual;
+		
 	}
 
 	System.out.println("Cargo: " + cargo[usrCargo] + "\n" + "Salário: R$" + usrSalario + "\n" + "Tempo: " + usrTempo
 			+ " meses" + "\n" + "Inglês: " + answerIngles + "\n" + "----------------------------------" + "\n"
-			+ "Novo salário: R$" + salarioAjustado + "\n" + "Cargo: " + cargo[usrCargo]);
+			+ "Novo salário: R$" + salarioAjustado + "\n" + "Cargo: " + cargo[usrCargo] + "\n" + "Gasto anual a mais após reajuste: " + gastoAnualAjustado);
 
 	
 	answer = JOptionPane.showConfirmDialog(null, "Deseja repetir o programa?");
@@ -139,11 +175,11 @@ JOptionPane.showMessageDialog(null, "  Saindo do programa");
 
 }
 }
-/*
- * 30. Alterar o programa acima para que seja executado uma vez todo o programa,
- * e antes de sair, pergunte para o usuário se ele deseja digitar informações de
- * outro funcionário. Se ele digitar true, o programa deve ser executado
- * novamente, perguntando as informações do cargo do funcionário e seu salário.
- * Caso digite false, imprima no console “Saindo do programa” e termine o
- * programa.
- */
+	
+
+
+/*31.	Alterar o programa acima para que na impressão do novo salário do funcionário e cargo,
+também imprima o gasto anual a mais que eu terei com este funcionário, ou seja, se ele tinha um 
+gasto anual de 12 mil reais, e com o salário reajustado custará 20 mil reais por ano, o 
+funcionário terá um gasto a mais de 8 mil reais. O programa deve exibir então este valor gasto a mais,
+conforme mensagem “Gasto anual a mais após reajuste: ” + valorAnual*/

@@ -5,6 +5,8 @@ import javax.swing.JOptionPane;
 public class _23 {
 public static void main(String[] args) {
 	
+	
+	
 	int num[] = new int [6];
 	num[0] = 1;
 	num[1] = 2;

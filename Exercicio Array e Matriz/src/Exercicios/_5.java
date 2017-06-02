@@ -7,9 +7,11 @@ public static void main(String[] args) {
 	dou[0] = 1.0;
 	dou[1] = 3.0;
 	dou[2] = 5.0;
-	dou[3] = 7.0;
+	
 
-			
+			for( double x : dou)
+				
+				System.out.println(x);
 }
 	
 	

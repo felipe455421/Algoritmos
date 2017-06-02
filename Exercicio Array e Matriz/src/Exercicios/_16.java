@@ -1,10 +1,15 @@
 package Exercicios;
 
+import javax.swing.JOptionPane;
+
 public class _16 {
 public static void main(String[] args) {
 	String num[] = new String[10];
 	String alf = "A";
 	int z = 0;
+	int answer = 0;
+	while (answer == 0){
+	
 	
 	for (int i = 0; i < num.length; i++) {
 		
@@ -27,13 +32,18 @@ public static void main(String[] args) {
 		
 		}
 		
+		
 		}
 	System.out.println(num[i]);    
 	
 
 	
 	
-	}	
+	}
+	
+	answer = JOptionPane.showConfirmDialog(null, "Deseja continuar");
+	
+}
 }
 }
 /*16.	Criar um array com 10 posições. Inserir nas posições 2, 4, 5, 7 os respectivos
