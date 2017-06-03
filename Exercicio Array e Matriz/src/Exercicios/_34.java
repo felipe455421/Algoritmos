@@ -27,7 +27,9 @@ public static void main(String[] args) {
 		
 		sair = 1;
 		JOptionPane.showMessageDialog(null, "Ligue urgente para agência bancária!");
+	
 	}else{
+	
 		usrPedido = Integer.parseInt(JOptionPane.showInputDialog("Saque efetuado lhe restá R$ " + saldo + " Digite a opção desejada :" +
 		"\n" + "0 - Sair" + "\n" + "1 - Saque" + "\n" + "2 - Depósito" + "\n" + "3 - Saldo Atual"
 		+ "\n" + "4 - Extrato "));
