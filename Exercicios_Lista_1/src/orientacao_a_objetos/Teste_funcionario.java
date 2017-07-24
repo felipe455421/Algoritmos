@@ -8,17 +8,17 @@ public class Teste_funcionario {
 		
 		DecimalFormat df = new DecimalFormat ("0.00");
 		Funcionario funcionario1 = new Funcionario();
-		funcionario1.nome = "Joaquim";
-		funcionario1.salario = 1500d;
+		funcionario1.setNome("Joaquim");
+		funcionario1.setSalario(15000d);
 		
 		Funcionario funcionario2 = new Funcionario();
-		funcionario2.nome = "Joaquim";
-		funcionario2.salario = 1500d;
+		funcionario2.setNome("Frederico");
+		funcionario2.setSalario(20000d);
 		
-		System.out.println(funcionario1.nome);
-		System.out.println(df.format(funcionario1.salario));
-		System.out.println(funcionario2.nome);
-		System.out.println(df.format(funcionario2.salario));
+		System.out.println(funcionario1.getNome());
+		System.out.println(df.format(funcionario1.getSalario()));
+		System.out.println(funcionario2.getNome());
+		System.out.println(df.format(funcionario2.getSalario()));
 
 	}
 }

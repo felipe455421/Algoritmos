@@ -10,17 +10,17 @@ public static void main(String[] args) {
 	Contas conta = new Contas("1234");
 	Agencias A = new Agencias("4321");
 	
-	conta.agencia = A;
+	conta.setAgencia(A);
 		
-	conta.limite = 123456d;
-	conta.saldo = 123456d;
+	conta.setLimite(123456d);
+	conta.setSaldo(123456d);
 	
 
 	
-	System.out.println(conta.numero_conta);
-	System.out.println(df.format(conta.limite));
-	System.out.println(df.format(conta.saldo));
+	System.out.println(conta.getNumero_conta());
+	System.out.println(df.format(conta.getLimite()));
+	System.out.println(df.format(conta.getSaldo()));
 
-	System.out.println(conta.agencia.numero_agencia);
+	System.out.println(conta.getAgencia().getNumero_agencia());
 }
 }

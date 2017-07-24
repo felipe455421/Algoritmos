@@ -5,14 +5,18 @@ import java.text.DecimalFormat;
 public class Contas {
 	DecimalFormat df = new DecimalFormat("#0.00");
 
-	String numero_conta;
-	double saldo;
-	double limite = 100d;
-	Agencias agencia;
-
+	private String numero_conta;
+	private double saldo;
+	private double limite = 100d;
+	private Agencias agencia;
+	
+	public static int contador;
+	public static int[] numeroContaUnico = new int[10];
 	
 	public Contas(String numero_conta){
 		this.numero_conta = numero_conta;
+		contador++;
+		numeroContaUnico[(contador - 1)] = contador;
 		
 		
 	}
@@ -22,6 +26,30 @@ public class Contas {
 
 	}
 
+	public String getNumero_conta() {
+		return numero_conta;
+	}
+	public void setNumero_conta(String numero_conta) {
+		this.numero_conta = numero_conta;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double getLimite() {
+		return limite;
+	}
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	public Agencias getAgencia() {
+		return agencia;
+	}
+	public void setAgencia(Agencias agencia) {
+		this.agencia = agencia;
+	}
 	public void deposita(double valor) {
 		this.saldo += valor;
 
@@ -45,5 +73,13 @@ public class Contas {
 		return extrato;
 
 	}
-
-}
+	
+	public static void limpaContador(){
+		System.out.println("O numero total de contas é: " + contador);
+		contador = 0;
+		
+		
+	}
+		
+		
+	}

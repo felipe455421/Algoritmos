@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	
 	Contas conta2 = new Contas(conta, 500d);
 	
-	System.out.println("Saldo da conta 2: " + conta2.saldo + "\n");
+	System.out.println("Saldo da conta 2: " + conta2.getSaldo() + "\n");
 	System.out.println(conta.extrato());
 	System.out.println(saldoDisponivel);
 

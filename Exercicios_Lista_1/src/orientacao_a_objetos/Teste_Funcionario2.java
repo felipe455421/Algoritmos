@@ -14,8 +14,8 @@ public class Teste_Funcionario2 {
 		
 		System.out.println("Digite um nome:");
 		
-		func.nome = scanner.nextLine();
-		System.out.println("Nome: " + func.nome);
+		func.setNome(scanner.nextLine());
+		System.out.println("Nome: " + func.getNome());
 		while (loop == 0){
 			
 			System.out.println("Deseja continuar?(Sim ou Não)");
@@ -24,12 +24,12 @@ public class Teste_Funcionario2 {
 		if(validate.equalsIgnoreCase("SIM")){
 			
 			System.out.println("Digite o nome do funcionario:");
-			func.nome = scanner.nextLine();
+			func.setNome(scanner.nextLine());
 			System.out.println("Digite o salario do funcionario:");
-			func.salario = Double.parseDouble(scanner.nextLine());
+			func.setSalario(Double.parseDouble(scanner.nextLine()));
 			
-			System.out.println("Nome: " + func.nome +"\n" + 
-			"Salario: " + df.format(func.salario));
+			System.out.println("Nome: " + func.getNome() +"\n" + 
+			"Salario: " + df.format(func.getSalario()));
 			
 		}else{
 			

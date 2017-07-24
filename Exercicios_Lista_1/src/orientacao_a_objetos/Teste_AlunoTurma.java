@@ -12,26 +12,26 @@ public static void main(String[] args)throws ParseException {
 	
 	SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 	
-	aluno.turma = T;
+	aluno.setTurma(T);
 	
-	aluno.nome = "José";
-	aluno.rg = "123456";
-	aluno.data_de_nascimento = sdf.parse("01/01/1996");
+	aluno.setNome("José");
+	aluno.setRg("123456");
+	aluno.setData_de_nascimento(sdf.parse("01/01/1996"));
 	
-	aluno.turma.periodo = "Matutino";
-	aluno.turma.serie = 1;
-	aluno.turma.sigla = "JAV";
-	aluno.turma.tipoEnsino = "Presencial";
+	aluno.getTurma().setPeriodo("Matutino");
+	aluno.getTurma().setSerie(1);
+	aluno.getTurma().setSigla("JAV");
+	aluno.getTurma().setTipoEnsino("Presencial");
 	
 	
-	System.out.println(aluno.nome);
-	System.out.println(aluno.rg);
-	System.out.println(sdf.format(aluno.data_de_nascimento));
+	System.out.println(aluno.getNome());
+	System.out.println(aluno.getRg());
+	System.out.println(sdf.format(aluno.getData_de_nascimento()));
 
-	System.out.println(aluno.turma.periodo);
-	System.out.println(aluno.turma.serie);
-	System.out.println(aluno.turma.sigla);
-	System.out.println(aluno.turma.tipoEnsino);
+	System.out.println(aluno.getTurma().getPeriodo());
+	System.out.println(aluno.getTurma().getSerie());
+	System.out.println(aluno.getTurma().getSigla());
+	System.out.println(aluno.getTurma().getTipoEnsino());
 
 }
 }
