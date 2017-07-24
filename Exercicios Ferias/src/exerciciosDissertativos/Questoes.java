@@ -1,6 +1,6 @@
 package exerciciosDissertativos;
 
-public class questoes {
+public class Questoes {
 
 	
 /*1)	Qual é a diferença entre Classe e Objeto, atributo e característica, método e ação?
