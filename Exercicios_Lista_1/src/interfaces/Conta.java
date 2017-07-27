@@ -1,11 +1,16 @@
+/**
+ * Documentação do pacote de interfaces
+ * 
+ * @author Felipe Gomes da Silva
+ * 
+ * @version 1.0
+ */
 package interfaces;
 
 
-public class Conta {
+public class Conta implements IBanco {
 	
-	private String usuario;
-	private String senha;
-	
+		
 	private int codigo;
 	private String nome;
 	
@@ -26,23 +31,17 @@ public class Conta {
 		this.nome = nome;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public void deposita(double valor){
+		
 	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-
 	
+	public void saca(double valor){
+		
+	}
+
+	public void getSaldo(){
+		
+	}
 }
 
 

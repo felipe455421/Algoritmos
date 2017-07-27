@@ -12,9 +12,15 @@ public class Funcionario {
 	DecimalFormat df = new DecimalFormat("0.00");
 
 	public void aumentaSalario(double valor) {
+		if(valor < 0) {
+			IllegalArgumentException erro = new IllegalArgumentException ();
+			throw erro;
+			} else {
+		
 		this.salario += valor;
 
 	}
+}
 
 	public String getNome() {
 		return nome;
