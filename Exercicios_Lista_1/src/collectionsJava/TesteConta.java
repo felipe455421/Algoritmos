@@ -5,16 +5,15 @@ import java.util.ArrayList;
 public class TesteConta {
 public static void main(String[] args) {
 	
-	ArrayList lista = new ArrayList<>();
-	ContaPoupanca cont = new ContaPoupanca(152);
+	ContaCorrente cont = new ContaCorrente(152);
 	
-	lista.add("João da Silva");
-	lista.add("saokd da Silva");
-	lista.add("weq da Silva");
-	lista.add("123 da Silva");
-	lista.add("herte da Silva");
+	cont.lista.add("João da Silva");
+	cont.lista.add("saokd da Silva");
+	cont.lista.add("weq da Silva");
+	cont.lista.add("123 da Silva");
+	cont.lista.add("herte da Silva");
 
-	for(Object x : lista) {
+	for(Object x : cont.lista) {
 	String s = (String) x;
 	System.out.println(s);
 	}

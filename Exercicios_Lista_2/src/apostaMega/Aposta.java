@@ -1,14 +1,16 @@
 package apostaMega;
 
 public class Aposta {
-//, 10, 11, 25, 59			,11,9,10,2	
-	private int[] resultado = new int[]{59,25};
-	private int[] aposta1 = new int[]{2, 9};
+
+	private int[] resultado = new int[]{59, 25, 11, 9, 10, 2};
+	private int[] aposta1 = new int[]{2, 9, 10, 11, 25, 59};
 	private int[] aposta2 = new int[]{2, 9, 10, 5, 14, 59};
 	private int[] aposta3 = new int[]{12, 15, 30, 38, 39, 40};
 	private int[] aposta4 = new int[]{3, 5, 6, 10, 11, 12};
 	private int[] aposta5 = new int[]{2, 4, 8, 26, 35, 38};
-
+	private int[] apostaComparar = new int[]{0, 0, 0, 0, 0, 0};
+	
+	
 	public int getResultado(int valor) {
 		return resultado[valor];
 	}
@@ -81,7 +83,18 @@ public class Aposta {
 		return aposta5;
 	}
 
+	public int[] getApostaComparar() {
+		return apostaComparar;
+	}
 	
+	public int getApostaComparar(int valor) {
+		return apostaComparar[valor];
+	}
+
+	public void setApostaComparar(int is, int index) {
+		this.apostaComparar[index] = is;
+	}
+
 }
 
 
