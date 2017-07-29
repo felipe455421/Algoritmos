@@ -9,13 +9,15 @@ import javax.swing.JOptionPane;
 public class ComparaApostas extends Aposta {
 
 	private int contador;
+	private String aposta = " ";
 	private int i = 0;
 	private int opcao = 0;
 
 	public void comparaAposta(String valor) {
 
 		opcao = Integer.parseInt(JOptionPane.showInputDialog("Digite qual opção deseja realizar: " + "\n"
-				+ "Opção 1 para apostas pré-definidas aleatorias" + "\n" + "Digite 2 para digitar sua própria aposta"));
+				+ "Opção 1 para apostas pré-definidas aleatorias" + "\n" + "Opção 2 para digitar sua própria aposta" + "\n" +
+				"Opção 3 para encerrar o programa"));
 
 		if (opcao == 1) {
 			List<String> letras = Arrays.asList("A", "B", "C", "D", "E");
@@ -66,8 +68,11 @@ public class ComparaApostas extends Aposta {
 				i++;
 			}
 
-		}
+		
+	}else if ( opcao == 3){
 
+		System.exit(0);
+	}
 		for (int i = 0; i < this.getResultado().length; i++) {
 			for (int z = 0; z < this.getApostaComparar().length; z++) {
 
@@ -80,10 +85,18 @@ public class ComparaApostas extends Aposta {
 		}
 
 		if (contador == 6) {
-			System.out.println("Você acertou " + this.contador + "/6 e Ganhou!! :D");
-		} else {
+			
+			for (int x : this.getApostaComparar()) {
+				aposta += x + " ";
+			}
+			System.out.println("Você acertou " + this.contador + "/6 e Ganhou!!" + "\n" + "Sua aposta foi: " + aposta);
 
-			System.out.println("Você acertou " + this.contador + "/6 e Perdeu!! :(");
+		} else {
+			
+			for (int x : this.getApostaComparar()) {
+				aposta += x + " ";
+			}
+			System.out.println("Você acertou " + this.contador + "/6 e Perdeu!!"  + "\n" + "Sua aposta foi:" + aposta);
 
 		}
 	}
