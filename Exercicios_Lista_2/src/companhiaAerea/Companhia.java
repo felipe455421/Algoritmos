@@ -4,10 +4,12 @@ import java.util.List;
 
 public class Companhia {
 
+
 	private List<Boing> boings;
 	private List<Monomotor> monomotores;
 	private List<Bimotor> bimotores;
-
+	
+	
 	public List<Boing> getBoings() {
 		return boings;
 	}
@@ -33,7 +35,20 @@ public class Companhia {
 	}
 
 	public double retornaFaturamentoPassagens() {
-
-		return 0d;
+		double faturamento = 0;
+		
+		for (Bimotor bimotor : bimotores) {
+		double faturamentoBimotor = (bimotor.getLugares() * bimotor.getValorPassagem());
+				faturamento += faturamentoBimotor;	
+		}
+		for (Boing boing : boings) {
+			double faturamentoBoing = boing.getLugares() * boing.getValorPassagem();
+			faturamento += faturamentoBoing;
+		}
+		for (Monomotor monomotor : monomotores){
+			double faturamentoMonomotor = monomotor.getLugares() * monomotor.getValorPassagem();
+			faturamento += faturamentoMonomotor;
+		}
+		return faturamento;
 	}
 }
