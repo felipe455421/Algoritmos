@@ -6,8 +6,8 @@ public class DVDs  extends Loja{
 
 	private String duracao;
 	
-	public DVDs(String nome, double preco, String duracao) {
-		super(nome, preco);
+	public DVDs(String nome, double preco,String codigoBarras, String duracao) {
+		super(nome, preco, codigoBarras);
 	}
 	
 	public String toString(){

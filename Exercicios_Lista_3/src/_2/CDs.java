@@ -6,8 +6,8 @@ public class CDs extends Loja{
 
 	private String nmrFaixas;
 	
-	public CDs(String nome, double preco, String nmrFaixas) {
-		super(nome, preco);
+	public CDs(String nome, double preco,String codigoBarras, String nmrFaixas) {
+		super(nome, preco, codigoBarras);
 		this.nmrFaixas = nmrFaixas;
 	}
 	
