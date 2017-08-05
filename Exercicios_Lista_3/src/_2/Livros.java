@@ -1,6 +1,6 @@
 package _2;
 
-public class Livros  extends Loja{
+public class Livros  extends Produto{
 
 
 
@@ -8,8 +8,9 @@ public class Livros  extends Loja{
 	
 	public Livros(String nome, double preco,String codigoBarras, String autor) {
 		super(nome, preco, codigoBarras);
+		this.autor = autor;
 	}
 	public String toString(){
-		return super.toString() + "\n" + "Esse livro foi escrito por: " +this.autor;
+		return super.toString() + "\n" + "Esse livro foi escrito por: " + this.autor;
 	}
 }

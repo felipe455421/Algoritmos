@@ -1,6 +1,6 @@
 package _2;
 
-public class CDs extends Loja{
+public class CDs extends Produto{
 
 	
 
@@ -14,4 +14,5 @@ public class CDs extends Loja{
 	public String toString(){
 		return super.toString() + "\n" + "Numero de faixas do CD: " + this.nmrFaixas;
 	}
+
 }
