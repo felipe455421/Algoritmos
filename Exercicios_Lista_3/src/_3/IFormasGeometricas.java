@@ -2,8 +2,13 @@ package _3;
 
 public interface IFormasGeometricas {
 
-	public static void calculaPeri(int lados, int cm){
-		
+	public default double calculaPeri() {
+		return 0;
+
 	}
 
+	public default double calculaArea() {
+		return 0;
+
+	}
 }
