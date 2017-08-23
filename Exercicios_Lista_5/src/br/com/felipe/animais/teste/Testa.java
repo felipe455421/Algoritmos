@@ -18,7 +18,7 @@ public class Testa {
 		try (Connection con = new ConnectionPoolOracle().getConnection()) {
 			List<Cachorro> cachorros = new CachorroDAO(con).lista();
 			for (Cachorro cachorro : cachorros) {
-				System.out.println(cachorro.getNome() + "\n" + cachorro.getSom());
+				System.out.println(cachorro.getCodigo() + "-" + cachorro.getNome() + "\n" + "  " + cachorro.getSom());
 			}
 		}
 
@@ -27,7 +27,7 @@ public class Testa {
 		try (Connection con = new ConnectionPoolOracle().getConnection()) {
 			List<Gato> gatos = new GatoDAO(con).lista();
 			for (Gato gato : gatos) {
-				System.out.println(gato.getNome() + "\n" + gato.getSom());
+				System.out.println(gato.getCodigo() + "-" + gato.getNome() + "\n" +  "  " + gato.getSom());
 			}
 		}
 
@@ -36,7 +36,7 @@ public class Testa {
 		try (Connection con = new ConnectionPoolOracle().getConnection()) {
 			List<PorquinhoDaIndia> pdis = new PorquinhoDaIndiaDAO(con).lista();
 			for (PorquinhoDaIndia pdi : pdis) {
-				System.out.println(pdi.getNome() + "\n" + pdi.getSom());
+				System.out.println(pdi.getCodigo() + "-" + pdi.getNome() + "\n" +  "  " + pdi.getSom());
 			}
 		}
 	}
